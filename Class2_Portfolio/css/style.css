@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none; border:none;
+}
+
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+}
+body{
+    padding-bottom: 6.5rem;
+}
+section{
+    padding:5rem 9%;
+} 
+.heading{
+    text-align:center;
+    font-size:6vw;
+    color:white;
+    margin-bottom:3rem;
+    text-transform:uppercase; 
+}
+.navbar{
+    position:fixed;
+    bottom:0;left:0;right:0;
+    display:flex;
+    z-index:1000;
+    align-items:flex-end;
+}
+a{
+    padding:2rem;
+    font-size:2rem;
+    background:black;
+    flex:1;
+    color:white;
+    text-align:center;
+    transition:.2s linear;
+}
+i{
+    color:white;
+    padding-right:.5rem;
+}
+
+a:hover{
+    background: crimson;
+    padding-bottom:6rem;
+}
+/* .icon:hover{
+    color:white;
+} */
+
+.home{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:4rem; 
+    min-height:calc(100vh-6.5rem);
+
+    span{
+        font-size:3 rem;
+        color:white;
+        padding:.5rem 0;
+        display:block;
+    }
+}
+ 
+
+.box{
+    flex: 1 1 20rem;
+    padding:3rem 4rem;
+    border-radius:.5rem;
+    background: light;
+    box-shadow:box-shadow;
+}
+
+/* education section starts */
+.education .box-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.education .box-container .box{
+    flex:1 1 40rem;
+    margin-left:2rem;
+    padding:2rem;
+    padding-top: 0;
+    padding-bottom:0;
+    padding-left:3.5rem;
+    padding-bottom:3rem;
+    border-left:.1rem solid lightgray;
+    position:relative;
+}
+
+.education .box-container .box .span{
+    font-size:1.7rem;
+    color:white;
+    border-radius:5rem;
+    padding:.5rem 1.5rem;
+    background: lightcyan;
+}
+.education .box-container .box .h3{
+    font-size:2rem;
+    padding:1rem 0;
+    color:white ;
+}
+/* education section ends      */
+
+/* hobbies section starts */
+/* .hobbies .box-container{
+    @include grid(32rem);
+}
+.hobbies .box-container .box{
+    height:100%;
+    overflow:hidden;
+    position:relative;
+}
+.hobbies .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+} */
+/* hobbies section ends */
+
+/* contact me section starts */
+.contact .row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+}
+.contact .row .info-container{
+    width:30rem;
+}
+.contact .row form{
+    flex:1 1 42rem;
+}
+.contact .row form .inputBox{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.contact .row form .inputBox input{
+    width:
+}
+.contact .row form input,textarea{
+    border-radius:5rem;
+    padding:1.2rem 1.8rem;
+    font-size:1.6rem;
+    color:white;
+    text-transform:none;
+    margin:.7rem 0;
+    background:black;
+}
+textarea{
+    width:100%;
+    border-radius:1rem;
+    resize:none;
+    height:25rem;
+}
+.contact .row form input{
+    width:49%;
+}
+.contact .row form .inputBox input{
+
+    margin-bottom:1rem;
+}
+.contact .row .info-container h1{
+    font-size:3rem;
+    text-transform:uppercase;
+    color:white;
+    padding-bottom: ;
+}
+.contact .row .info-container p{
+    font-size:1.5rem;
+    line-height:2;
+    color:lightcyan;
+    padding:1rem 0;
+}
+.contact .row .info-container .box-container{
+    padding: 2rem 0;
+}
+.contact .row .info-container .box-container .box{
+    display:flex;
+    gap:2rem;
+    padding: 1rem 0;
+}
+.contact .row .info-container .box-container .box i{
+    font-size:4rem;
+    color:crimson;
+    /* padding-top:.5rem; */
+}
+.contact .row .info-container .box-container .box h3{
+    font-size:2rem;
+    color:white;
+}
+.share a{
+    font-size:2rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height:4.5rem;
+    border-radius:50%;
+    background:lightcyan;
+    color:white;
+    text-align:center;
+    margin-right:.3rem;
+}
+.share a:hover{
+    background:crimson;
+}
+/* contact me section ends */
+
+@media(max-width:1200px){
+    html{
+        font: size 55%;
+    }
+    section{
+        padding:3rem 2rem;
+    }
+} 
+
+@media(max-width:768px){
+
+    .heading{
+        font-size:12vw
+    }
+
+    .navbar
+    {
+        a{
+            i{
+                padding:0;
+            }
+
+            span{
+                display:none;
+            }
+
+            :hover{
+                padding-bottom:2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font: size 50%;
+    }
+} 
+
+/* skills */
+/* .skills{
+    padding:5rem 0 2.5rem 0;
+}
+.skills .text{
+    width:70%;
+    margin:1.5rem auto;
+    text-align:center;
+}
+.skills .row{
+    margin:1rem 0;
+}
+.skills .item{
+    padding:0.5rem 0;
+    margin:0.3rem 0;
+}
+.skills .item-text{
+    font-size: 60px;
+    color: whitesmoke;
+    display:flex;
+    justify-content:flex-start;
+    font-weight:600;
+    font-size: 30px;
+    position:relative;
+}
+.skills .item-text span:last-child{
+    position:absolute;
+}
+.skills .item-text .w-90{
+    margin: left 85%;
+}
+.skills .item-text .w-75{
+    margin: left 70%;
+}
+.skills .item-text .w-80{
+    margin: left 75%;
+}
+.skills .item-text .w-85{
+    margin: left 80%;
+}
+.progress{
+    margin:0.8rem 0;
+    border-radius: 10px;
+    height:16px;
+    width:100%;
+    background-color:rgb(88, 85, 85);
+    overflow:hidden;
+}
+.progress-bar{
+    background: lightgreen;
+    height:100%;
+    border-top-right-radius:2px;
+    border-bottom-right-radius: 2px;
+} */
+/* .progress-bar .w-90{
+    width:90%;
+}
+.progress-bar .w-75{
+    width: 75%;
+}
+.progress-bar .w-80{
+    width:80px;
+}
+.progress-bar .w-90{
+    width: 85px;
+} */
+
+/* skills part2 */
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color:white;
+}
+
+.mh-skills .mh-professional-skill h3{
+    font-size:30px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400;
+    margin-bottom: 60px;
+    font-family:"Poppins",sans-serif;
+}
+
+.mh-profession-skills{
+    /* padding-left: 20%; */
+    color:white;
+}
+
+.mh-profession-skills h3{
+    font-size:40px;
+    line-height:40px;
+    text-align:center;
+    font-weight:400;
+    margin-bottom: 60px;
+    font-family:"Poppins",sans-serif;
+    color:white;
+}
+
+.mh-professional-progress li{
+    display:inline-block;
+    margin:0 auto;
+    float:none;
+    width:20%;
+    /* height:20%; */
+    margin-bottom:30px;
+    margin-left: 30px;
+    text-align:center;
+    padding-left: 200px;
+}
+
+.mh-progress{
+    margin-bottom:10px;
+    font:900 1.14285/1 Cinzerl, cursive;
+}
+
+.mh-progress .progressbar-text{
+    color:inherit !important;
+    font-family:"Poppins",sans-serif;
+}
+
+.progress .progress-line{
+    height:10px;
+    margin-right:60px;
+}
+
+.progress .progress-line .progressbar-text{
+    position:absolute;
+    top:50%;
+    left:100%;
+    width:60px;
+    transform: translateY(-35%);
+    text-align:center;
+    font-family:"Poppins",sans-serif;
+}
+
+.mh-progress .mh-progress-circle{
+    display:inline-block;
+    width:100px;
+    height:100px;
+}
+
+.mh-progress path:nth-child(1){
+    stroke:rgba(0,0,0,0.7);
+}
+
+.mh-progress path:nth-child(2){
+    stroke:#0bceaf !important;
+}
+
+.candidates{
+    position:relative;
+    margin-bottom:15px;
+    font-family: "Poppins",sans-serif;
+}
+
+.candidates .parcial{
+    display:inline-block;
+    width:100%;
+    vertical-align: middle;
+}
+
+.candidates .parcial .info{
+    position:relative;
+    font-family: "Poppins",sans-serif;
+}
+
+.candidates .parcial .info .nome{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:15px;
+    font-weight:600;
+    opacity:0.9;
+    font-family: "Poppins",sans-serif;
+}
+
+.candidates .parcial .info .percentage-num{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:14px;
+    font-weight:normal;
+}
+
+.candidates .parcial .progressBar{
+    position:relative;
+    width:100%;
+    height:7px;
+    margin: 39px 0 2px;
+    border-radius:10px;
+    background:rgba(227, 215, 215, 0.5);
+}
+
+.candidates .parcial .percentagem{
+    position:absolute;
+    top:0;
+    left:0;
+    height:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:#0bceaf;
+    -webkit-transition:3s all;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name:animationProgress;
+    font-family:"Poppins",sans-serif;
+}
+
+.precentual{
+    animation-name:animationProgress;
+}
+
+@keyframes animationProgress{
+    from{
+        width:0;
+    }
+}
