@@ -19,10 +19,10 @@ jobs:
           publish_dir: D:/5th SEM/Frontend design/Lab/Class2_Portfolio
 
       - name: Show URL
-        run: echo "Website deployed at https://amisha0609.github.io/MyPortfolio/"
+        run: echo "Website deployed at https://amisha0609.github.io/MyPortfolio/Class2_Portfolio/home.html"
 
       - name: Set output URL
-        run: echo "::set-output name=url::https://amisha0609.github.io/MyPortfolio/"
+        run: echo "::set-output name=url::https://amisha0609.github.io/MyPortfolio/Class2_Portfolio/home.html"
 
       - name: Output URL
         run: echo "Deployed to ${{ steps.deploy.outputs.url }}"
