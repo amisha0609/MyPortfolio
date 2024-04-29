@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: D:/5th SEM/Frontend design/Lab/Class2_Portfolio
+
+      - name: Show URL
+        run: echo "Website deployed at https://amisha0609.github.io/MyPortfolio/"
+
+      - name: Set output URL
+        run: echo "::set-output name=url::https://amisha0609.github.io/MyPortfolio/"
+
+      - name: Output URL
+        run: echo "Deployed to ${{ steps.deploy.outputs.url }}"
